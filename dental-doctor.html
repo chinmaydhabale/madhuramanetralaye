@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Dr. Poonam Pashine - Madhurama Netralaye & Dental Clinic</title>
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #198754;
+            --secondary: #0d6efd;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --accent: #20c997;
+            --light-green: #e6f7ee;
+            --light-blue: #e7f5ff;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+            background-color: #f9f9f9;
+        }
+
+        body.menu-open {
+            overflow: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            font-size: 1rem;
+            box-shadow: var(--shadow);
+            white-space: normal;
+            line-height: 1.4;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-secondary {
+            background-color: var(--secondary);
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Header & Navbar */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .logo-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-text h1 {
+            font-size: 1.3rem;
+            margin: 0;
+            color: var(--secondary);
+        }
+
+        .logo-text p {
+            font-size: 0.8rem;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            position: relative;
+            padding: 5px 0;
+            transition: var(--transition);
+        }
+
+        .nav-links a:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--primary);
+        }
+
+        .nav-links a:hover:after,
+        .nav-links a.active:after {
+            width: 100%;
+        }
+
+        .appointment-btn {
+            padding: 10px 25px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            border-radius: 50px;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .appointment-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(25, 135, 84, 0.3);
+        }
+
+        .menu-toggle {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px;
+        }
+
+        /* Doctor Hero Section */
+        .dental-hero {
+            background: linear-gradient(135deg, rgba(25, 135, 84, 0.9), rgba(32, 201, 151, 0.85)), url('https://images.unsplash.com/photo-1588776813677-77d00c1ff639?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80') center/cover;
+            padding: 160px 0 80px;
+            color: white;
+            text-align: center;
+        }
+
+        .dental-hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .dental-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .dental-hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .dental-hero .credentials {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 15px;
+            border-radius: 10px;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* Doctor Profile Section */
+        .doctor-profile {
+            padding: 100px 0;
+            background-color: white;
+        }
+
+        .profile-container {
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .doctor-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            position: relative;
+            height: 500px;
+        }
+
+        .doctor-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .doctor-image:hover img {
+            transform: scale(1.05);
+        }
+
+        .doctor-info {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .doctor-info h2 {
+            color: var(--primary);
+            font-size: 2.5rem;
+            position: relative;
+            padding-bottom: 15px;
+            margin-bottom: 30px;
+        }
+
+        .doctor-info h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .doctor-info p {
+            margin-bottom: 25px;
+            font-size: 1.1rem;
+        }
+
+        .highlight {
+            background: var(--light-green);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary);
+            margin: 40px 0;
+        }
+
+        .highlight h3 {
+            color: var(--primary);
+            margin-bottom: 15px;
+        }
+
+        /* Philosophy Section */
+        .philosophy {
+            padding: 100px 0;
+            background: linear-gradient(to right, var(--light-green), white);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+
+        .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: var(--accent);
+            border-radius: 2px;
+        }
+
+        .philosophy-content {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .philosophy-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .philosophy-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 400px;
+            box-shadow: var(--shadow);
+        }
+
+        .philosophy-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Technology Section */
+        .technology {
+            padding: 100px 0;
+            background-color: white;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .tech-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            padding: 30px;
+            text-align: center;
+            border-top: 4px solid var(--primary);
+        }
+
+        .tech-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .tech-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 20px;
+        }
+
+        .tech-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: var(--dark);
+        }
+
+        /* Team Section */
+        .team {
+            padding: 100px 0;
+            background: linear-gradient(to right, var(--light-green), white);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .team-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .team-image {
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .team-info {
+            padding: 25px;
+            text-align: center;
+        }
+
+        .team-info h4 {
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .team-info .specialty {
+            color: var(--dark);
+            font-weight: 500;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        /* Appointment Banner */
+        .appointment-banner {
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            padding: 70px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .appointment-banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .appointment-banner p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .banner-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 70px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .footer-logo {
+            margin-bottom: 20px;
+        }
+
+        .footer-logo img {
+            height: 60px;
+        }
+
+        .footer-links h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-links h4:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--accent);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-links ul li a {
+            color: #ddd;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--accent);
+            padding-left: 5px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .contact-item i {
+            font-size: 1.2rem;
+            color: var(--accent);
+            flex-shrink: 0;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #333;
+            color: white;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--accent);
+            transform: translateY(-5px);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #aaa;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .dental-hero h1 {
+                font-size: 3rem;
+            }
+
+            .profile-container {
+                flex-direction: column;
+            }
+
+            .philosophy-content {
+                flex-direction: column;
+            }
+
+            .doctor-image {
+                min-width: 100%;
+            }
+
+            .doctor-info {
+                min-width: 100%;
+            }
+
+            .philosophy-text {
+                min-width: 100%;
+            }
+
+            .philosophy-image {
+                min-width: 100%;
+                margin-top: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            body.menu-open {
+                overflow: hidden;
+            }
+
+            /* Header adjustments */
+            header {
+                padding: 10px 0;
+            }
+
+            .navbar {
+                padding: 10px 0;
+            }
+
+            /* Logo adjustments */
+            .logo {
+                gap: 10px;
+            }
+
+            .logo img {
+                height: 40px;
+            }
+
+            .logo-icon i {
+                font-size: 1.5rem !important;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                flex-direction: column;
+                background: white;
+                width: 100%;
+                text-align: center;
+                padding: 20px 0;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+                transition: var(--transition);
+                gap: 0;
+                max-height: calc(100vh - 70px);
+                overflow-y: auto;
+                z-index: 999;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links li {
+                margin: 10px 0;
+            }
+
+            .nav-links a {
+                padding: 10px 20px;
+                display: block;
+            }
+
+            /* Hide appointment button on mobile */
+            .appointment-btn {
+                display: none;
+            }
+
+            .dental-hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title h2 {
+                font-size: 2rem;
+            }
+
+            /* Hero buttons stack */
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+
+            /* Tech grid */
+            .tech-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            /* Team grid */
+            .team-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            /* Footer adjustments */
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+        }
+
+        @media (max-width: 576px) {
+
+            /* Container padding */
+            .container {
+                padding: 0 15px;
+            }
+
+            /* Hero adjustments */
+            .dental-hero {
+                padding: 120px 0 60px;
+            }
+
+            .dental-hero h1 {
+                font-size: 2rem;
+                line-height: 1.3;
+            }
+
+            .dental-hero .subtitle {
+                font-size: 1.1rem;
+                line-height: 1.4;
+            }
+
+            .dental-hero .credentials {
+                font-size: 0.9rem;
+                padding: 10px 15px;
+                margin-bottom: 20px;
+            }
+
+            /* Logo text */
+            .logo-text h1 {
+                font-size: 1.1rem;
+            }
+
+            .logo-text p {
+                font-size: 0.7rem;
+            }
+
+            /* Section spacing */
+            .doctor-profile,
+            .philosophy,
+            .technology,
+            .team {
+                padding: 60px 0;
+            }
+
+            /* Doctor profile */
+            .doctor-image {
+                height: 350px;
+                border-radius: 15px;
+            }
+
+            .doctor-info h2 {
+                font-size: 2rem;
+            }
+
+            .doctor-info p {
+                font-size: 1rem;
+                margin-bottom: 20px;
+            }
+
+            .highlight {
+                padding: 20px;
+                margin: 30px 0;
+            }
+
+            .highlight h3 {
+                font-size: 1.3rem;
+            }
+
+            .highlight p {
+                font-size: 0.95rem;
+            }
+
+            /* Section titles */
+            .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .section-title {
+                margin-bottom: 40px;
+            }
+
+            .section-title p {
+                font-size: 0.95rem;
+            }
+
+            /* Philosophy section */
+            .philosophy-text ul {
+                margin: 15px 0 15px 20px;
+            }
+
+            .philosophy-text ul li {
+                font-size: 0.95rem;
+                margin-bottom: 10px;
+            }
+
+            .philosophy-image {
+                height: 300px;
+                border-radius: 15px;
+            }
+
+            /* Tech cards */
+            .tech-card {
+                padding: 25px;
+            }
+
+            .tech-icon {
+                font-size: 2.5rem;
+            }
+
+            .tech-card h3 {
+                font-size: 1.25rem;
+            }
+
+            .tech-card p {
+                font-size: 0.9rem;
+            }
+
+            /* Team cards */
+            .team-image {
+                height: 200px;
+            }
+
+            .team-info {
+                padding: 20px;
+            }
+
+            .team-info h4 {
+                font-size: 1.1rem;
+            }
+
+            .team-info .specialty {
+                font-size: 0.9rem;
+            }
+
+            .team-info p {
+                font-size: 0.85rem;
+            }
+
+            /* Appointment banner */
+            .appointment-banner {
+                padding: 50px 0;
+            }
+
+            .appointment-banner h2 {
+                font-size: 2rem;
+            }
+
+            .appointment-banner p {
+                font-size: 1rem;
+                margin-bottom: 25px;
+            }
+
+            .banner-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .banner-buttons .btn {
+                width: 100%;
+                max-width: 250px;
+            }
+
+            /* Footer */
+            footer {
+                padding: 50px 0 20px;
+            }
+
+            .footer-links h4 {
+                font-size: 1.1rem;
+            }
+
+            .footer-links ul li a {
+                font-size: 0.9rem;
+            }
+
+            .contact-item {
+                font-size: 0.9rem;
+            }
+
+            .contact-item i {
+                font-size: 1rem;
+            }
+
+            .social-links a {
+                width: 35px;
+                height: 35px;
+                font-size: 0.9rem;
+            }
+
+            .copyright {
+                font-size: 0.85rem;
+                padding-top: 15px;
+            }
+
+            /* Buttons */
+            .btn {
+                padding: 10px 20px;
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Extra small devices */
+        @media (max-width: 400px) {
+
+            /* Logo text */
+            .logo-text h1 {
+                font-size: 1rem;
+            }
+
+            .logo-text p {
+                font-size: 0.65rem;
+            }
+
+            /* Hero */
+            .dental-hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .dental-hero .subtitle {
+                font-size: 1rem;
+            }
+
+            .dental-hero .credentials {
+                font-size: 0.85rem;
+                letter-spacing: 0;
+            }
+
+            /* Buttons */
+            .btn {
+                padding: 10px 15px;
+                font-size: 0.85rem;
+            }
+
+            /* Section titles */
+            .section-title h2 {
+                font-size: 1.5rem;
+            }
+
+            .doctor-info h2 {
+                font-size: 1.75rem;
+            }
+
+            .appointment-banner h2 {
+                font-size: 1.75rem;
+            }
+        }
+
+        /* Landscape mode fixes for mobile */
+        @media (max-width: 768px) and (orientation: landscape) {
+            .dental-hero {
+                padding: 100px 0 50px;
+            }
+
+            .dental-hero h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                max-height: calc(100vh - 60px);
+            }
+        }
+
+        /* Prevent horizontal scrolling */
+        @media (max-width: 768px) {
+            body {
+                overflow-x: hidden;
+            }
+
+            .container {
+                overflow-x: hidden;
+            }
+        }
+
+        /* Fix for menu open state on desktop */
+        @media (min-width: 769px) {
+            body.menu-open {
+                overflow: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="/" class="logo" style="text-decoration: none;">
+                    <div class="logo-icon">
+                        <img src="/images/mnoficiallogo.png" alt="MN">
+                    </div>
+                    <div class="logo-text">
+                        <h1>Madhurama Netralaye</h1>
+                        <p>& Dental Clinic</p>
+                    </div>
+                </a>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="eye-doctor.html">Eye Doctor</a></li>
+                    <li><a href="dental-doctor.html" class="active">Dental Doctor</a></li>
+                    <li><a href="index.html#services">Eye Services</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+
+                <a href="tel:+919028107222" class="appointment-btn">
+                    <i class="fas fa-phone-alt"></i> Call Now
+                </a>
+
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Dental Hero Section -->
+    <section class="dental-hero">
+        <div class="container">
+            <div class="dental-hero-content">
+                <h1 data-aos="fade-up" data-aos-duration="1000">Dr. Poonam Pashine</h1>
+                <div class="subtitle" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Dental Surgeon &
+                    Hospital Administrator</div>
+                <div class="credentials" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    BDS, MBA (Hospital Administration)
+                </div>
+                <div class="hero-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+                    <a href="tel:+919028107222" class="btn btn-primary">
+                        <i class="fas fa-phone-alt"></i> Call Now
+                    </a>
+                    <a href="https://www.indiaopd.com/?RegNo=2009/03/0733" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Profile Section -->
+    <section class="doctor-profile">
+        <div class="container">
+            <div class="profile-container">
+                <div class="doctor-image" data-aos="fade-right" data-aos-duration="1000">
+                    <img src="/images/poonampashine.png"
+                        alt="Dr. Poonam Pashine">
+                </div>
+
+                <div class="doctor-info" data-aos="fade-left" data-aos-duration="1000">
+                    <h2>About Dr. Poonam Pashine</h2>
+                    <p>Meet Dr. Poonam Pashine, a dental surgeon and hospital administrator with a team of
+                        super-specialist dental surgeons. With precision and compassion, she leads a journey of dental
+                        excellence.</p>
+
+                    <p>Dr. Pashine brings a unique combination of clinical expertise and administrative excellence to
+                        Madhurama Netralaye & Dental Clinic. Her approach integrates advanced dental techniques with
+                        holistic patient care, ensuring optimal oral health outcomes for every patient.</p>
+
+                    <div class="highlight">
+                        <h3>Professional Philosophy</h3>
+                        <p>"It's not just about treating teeth; it's about touching lives. Every smile we restore
+                            represents a life transformed, and that's what drives our team to deliver exceptional care
+                            with compassion and precision."</p>
+                    </div>
+
+                    <p>With her MBA in Hospital Administration, Dr. Pashine fosters a collaborative, patient-centric
+                        environment where specialists work together seamlessly to deliver comprehensive dental
+                        solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dental Philosophy Section -->
+    <section class="philosophy">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up" data-aos-duration="800">
+                <h2>Holistic Dental Care Approach</h2>
+                <p>Restoring smiles, transforming lives</p>
+            </div>
+
+            <div class="philosophy-content">
+                <div class="philosophy-text" data-aos="fade-right" data-aos-duration="1000">
+                    <p>Dr. Poonam Pashine's approach to dentistry integrates clinical expertise with genuine care for
+                        each patient's well-being. Her philosophy centers on several key principles:</p>
+
+                    <ul style="margin: 20px 0 20px 30px;">
+                        <li style="margin-bottom: 15px;"><strong>Prevention First:</strong> Emphasizing education and
+                            preventive care to maintain optimal oral health</li>
+                        <li style="margin-bottom: 15px;"><strong>Comprehensive Solutions:</strong> Addressing both
+                            immediate concerns and long-term dental wellness</li>
+                        <li style="margin-bottom: 15px;"><strong>Patient Empowerment:</strong> Educating patients to
+                            become active participants in their oral health</li>
+                        <li style="margin-bottom: 15px;"><strong>Comfort-Centered Care:</strong> Creating a welcoming
+                            environment that eases dental anxiety</li>
+                        <li><strong>Lifelong Relationships:</strong> Building trust through consistent, high-quality
+                            care over time</li>
+                    </ul>
+
+                    <p>From restoring smiles to preventive care, Dr. Pashine's holistic approach ensures that each
+                        patient receives personalized treatment tailored to their unique needs and lifestyle.</p>
+                </div>
+
+                <div class="philosophy-image" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="/images/dentaldoctorimg.png" alt="Dental Care Philosophy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="technology">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up" data-aos-duration="800">
+                <h2>State-of-the-Art Dental Technology</h2>
+                <p>Precision equipment for superior treatment outcomes</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-card" data-aos="fade-up" data-aos-duration="800">
+                    <div class="tech-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3>Digital X-Rays</h3>
+                    <p>High-resolution imaging with 90% less radiation exposure for safer diagnostics.</p>
+                </div>
+
+                <div class="tech-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+                    <div class="tech-icon">
+                        <i class="fas fa-camera"></i>
+                    </div>
+                    <h3>Intraoral Cameras</h3>
+                    <p>High-magnification imaging for precise diagnosis and patient education.</p>
+                </div>
+
+                <div class="tech-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+                    <div class="tech-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Laser Dentistry</h3>
+                    <p>Minimally invasive procedures for faster healing and reduced discomfort.</p>
+                </div>
+
+                <div class="tech-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+                    <div class="tech-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>CAD/CAM Systems</h3>
+                    <p>Same-day custom crowns, veneers, and inlays with digital precision.</p>
+                </div>
+
+                <div class="tech-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+                    <div class="tech-icon">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <h3>3D Imaging</h3>
+                    <p>Comprehensive oral mapping for implant planning and complex procedures.</p>
+                </div>
+
+                <div class="tech-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
+                    <div class="tech-icon">
+                        <i class="fas fa-teeth-open"></i>
+                    </div>
+                    <h3>Intraoral Scanners</h3>
+                    <p>Digital impressions for improved accuracy and patient comfort.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Banner -->
+    <section class="appointment-banner">
+        <div class="container">
+            <h2 data-aos="fade-up" data-aos-duration="1000">Transform Your Smile Today</h2>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">Experience exceptional dental care with
+                our state-of-the-art technology and super-specialty team. Schedule your appointment now for a
+                comprehensive dental evaluation.</p>
+            <div class="banner-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <a href="tel:+919028107222" class="btn btn-primary">
+                    <i class="fas fa-phone-alt"></i> +91 90281 07222
+                </a>
+                <a href="https://www.indiaopd.com/?RegNo=2009/03/0733" target="_blank" class="btn btn-secondary">
+                    <i class="fas fa-calendar-check"></i> Book Online
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <div class="logo-icon">
+                                <img src="/images/mnoficiallogo.png" alt="MN">
+                                <!-- <i class="fas fa-eye fa-2x" style="color: var(--accent);"></i>
+                                <i class="fas fa-tooth fa-2x" style="color: white; margin-left: -10px;"></i> -->
+                            </div>
+                            <div class="logo-text">
+                                <h1 style="color: white;">Madhurama Netralaye</h1>
+                                <p style="color: #ccc;">& Dental Clinic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Providing advanced eye and dental care with compassion and cutting-edge technology since 2010.
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="eye-doctor.html">Eye Doctor</a></li>
+                        <li><a href="dental-doctor.html">Dental Doctor</a></li>
+                        <li><a href="index.html#services">Eye Services</a></li>
+                        <li><a href="index.html#cataract">Cataract Surgery</a></li>
+                        <li><a href="index.html#testimonials">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Contact Us</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Rajiv Gandhi Chowk, Kham Talav Road, near Dr.Wane's Prayas Hosital, Bhandara,
+                                Maharashtra 441904</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 90281 07222, +91 77700 09535</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@madhuramanetralaye.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Mon-Sun: 9:00 AM - 8:00 PM<br>Tuesday: Closed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 Madhurama Netralaye & Dental Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS animations
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+            disable: function () {
+                return window.innerWidth < 768 && 'mobile';
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        const body = document.body;
+
+        menuToggle.addEventListener('click', function () {
+            navLinks.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                body.classList.remove('menu-open');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function (event) {
+            const isClickInsideMenu = navLinks.contains(event.target);
+            const isClickOnToggle = menuToggle.contains(event.target);
+
+            if (!isClickInsideMenu && !isClickOnToggle && navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                body.classList.remove('menu-open');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Prevent horizontal scroll on mobile
+        function preventHorizontalScroll() {
+            const maxWidth = window.innerWidth;
+            const elements = document.querySelectorAll('*');
+
+            elements.forEach(el => {
+                if (el.offsetWidth > maxWidth) {
+                    console.warn('Element causing horizontal scroll:', el);
+                }
+            });
+        }
+
+        // Check on load and resize
+        window.addEventListener('load', preventHorizontalScroll);
+        window.addEventListener('resize', preventHorizontalScroll);
+
+        // Add active class to current navigation item
+        const currentLocation = location.pathname;
+        const menuItems = document.querySelectorAll('.nav-links a');
+
+        menuItems.forEach(item => {
+            if (item.getAttribute('href') === currentLocation.split('/').pop()) {
+                item.classList.add('active');
+            }
+        });
+
+        // Handle window resize
+        let resizeTimer;
+        window.addEventListener('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                if (window.innerWidth > 768) {
+                    navLinks.classList.remove('active');
+                    body.classList.remove('menu-open');
+                }
+            }, 250);
+        });
+    </script>
+</body>
+
+</html>
