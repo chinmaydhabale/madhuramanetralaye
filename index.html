@@ -4,7 +4,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>Madhurama Netralaye & Dental Clinic</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Best Eye Doctor & Dental Care in Bhandara | Madhurama Netralaye & Dental Clinic</title>
+    <meta name="description"
+        content="Leading Eye Care & Dental Clinic in Bhandara, Maharashtra. Dr. Durgesh Pashine - Expert Ophthalmologist & Dr. Poonam Pashine - Dental Surgeon. Cataract Surgery, LASIK, Dental Implants. Call +91 90281 07222">
+    <meta name="keywords"
+        content="eye doctor bhandara, dental clinic bhandara, cataract surgery bhandara, ophthalmologist bhandara, dental surgeon bhandara, LASIK bhandara, eye specialist bhandara, best eye doctor bhandara, dental implants bhandara, maharashtra eye care">
+    <meta name="author" content="Madhurama Netralaye & Dental Clinic">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+
+    <!-- Local SEO -->
+    <meta name="geo.region" content="IN-MH">
+    <meta name="geo.placename" content="Bhandara, Maharashtra">
+    <meta name="geo.position" content="21.1704;79.6581">
+    <meta name="ICBM" content="21.1704, 79.6581">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Best Eye Doctor & Dental Care in Bhandara | Madhurama Netralaye">
+    <meta property="og:description"
+        content="Leading Eye Care & Dental Clinic in Bhandara, Maharashtra. Expert doctors, advanced technology, affordable treatment. Book appointment now!">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.madhuramanetralaye.in">
+    <meta property="og:image" content="https://www.madhuramanetralaye.in/images/madhuramaeyehospital.png">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Madhurama Netralaye & Dental Clinic">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Best Eye Doctor & Dental Care in Bhandara | Madhurama Netralaye">
+    <meta name="twitter:description"
+        content="Leading Eye Care & Dental Clinic in Bhandara, Maharashtra. Expert doctors, advanced technology, affordable treatment.">
+    <meta name="twitter:image" content="https://www.madhuramanetralaye.in/images/madhuramaeyehospital.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.madhuramanetralaye.in/">
+
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalOrganization",
+        "name": "Madhurama Netralaye & Dental Clinic",
+        "image": "https://www.madhuramanetralaye.in/images/madhuramaeyehospital.png",
+        "description": "Leading Eye Care & Dental Clinic in Bhandara, Maharashtra offering comprehensive eye and dental treatments",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rajiv Gandhi Chowk, Kham Talav Road, near Dr.Wane's Prayas Hospital",
+            "addressLocality": "Bhandara",
+            "addressRegion": "Maharashtra",
+            "postalCode": "441904",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+           "latitude": "21.16837318627516",
+            "longitude": "79.65041157932943"
+        },
+        "telephone": "+919028107222",
+        "url": "https://www.madhuramanetralaye.in",
+        "openingHours": [
+            "Mo-Su 09:00-20:00"
+        ],
+        "priceRange": "₹₹",
+        "medicalSpecialty": ["Ophthalmology", "Dentistry"],
+        "founder": [
+            {
+                "@type": "Person",
+                "name": "Dr. Durgesh Pashine",
+                "jobTitle": "Ophthalmologist"
+            },
+            {
+                "@type": "Person", 
+                "name": "Dr. Poonam Pashine",
+                "jobTitle": "Dental Surgeon"
+            }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Medical Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "MedicalProcedure",
+                        "name": "Cataract Surgery"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "MedicalProcedure", 
+                        "name": "LASIK Surgery"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "MedicalProcedure",
+                        "name": "Dental Implants"
+                    }
+                }
+            ]
+        },
+        "areaServed": [
+            "Bhandara",
+            "Nagpur",
+            "Gondia",
+            "Chandrapur",
+            "Wardha",
+            "Maharashtra"
+        ]
+    }
+    </script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lato:wght@300;400;700&display=swap"
@@ -13,6 +131,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/mnoficiallogo.png">
+
     <style>
         :root {
             --primary: #0d6efd;
@@ -196,41 +318,137 @@
         }
 
         /* Hero Section */
-        .hero {
-            height: 100vh;
-            background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.9)), url('/images/mnbuilding.png') center/cover;
-            display: flex;
-            align-items: center;
-            position: relative;
+        .hero-background {
+            background-image: url('https://placehold.co/1920x1080/eef7ff/ffffff?text=Soft+Medical+Background');
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -3;
+            opacity: 0.3;
+            transition: transform 0.4s ease-out;
+        }
+
+        /* Glassmorphism card style for the left column content */
+        .glass-container {
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        /* Glowing border animation */
+        @keyframes glowing {
+            0% {
+                box-shadow: 0 0 8px rgba(59, 130, 246, 0.2), 0 0 12px rgba(59, 130, 246, 0.2);
+            }
+
+            50% {
+                box-shadow: 0 0 25px rgba(59, 130, 246, 0.4), 0 0 35px rgba(59, 130, 246, 0.4);
+            }
+
+            100% {
+                box-shadow: 0 0 8px rgba(59, 130, 246, 0.2), 0 0 12px rgba(59, 130, 246, 0.2);
+            }
+        }
+
+        .glowing-border {
+            animation: glowing 5s infinite ease-in-out;
+        }
+
+        /* Floating icons and particles animation */
+        .animation-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             overflow: hidden;
-            color: white;
-            margin-top: 80px;
+            z-index: -2;
         }
 
-        .hero-content {
-            max-width: 650px;
-            z-index: 10;
-            position: relative;
+        .floating-icon {
+            position: absolute;
+            color: rgba(59, 130, 246, 0.2);
+            animation: float 15s infinite ease-in-out;
+            transition: transform 1s ease-out;
         }
 
-        .hero h1 {
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-25px) rotate(10deg);
+            }
+        }
+
+        /* Specific icon positions and animation delays */
+        #icon-eye {
+            top: 15%;
+            left: 10%;
+            font-size: 3rem;
+            animation-duration: 12s;
+        }
+
+        #icon-tooth {
+            top: 20%;
+            right: 12%;
+            font-size: 2.5rem;
+            animation-duration: 18s;
+            animation-delay: -5s;
+        }
+
+        #icon-stethoscope {
+            bottom: 15%;
+            left: 5%;
             font-size: 3.5rem;
-            margin-bottom: 20px;
-            line-height: 1.2;
+            animation-duration: 16s;
+            animation-delay: -2s;
         }
 
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            opacity: 0.9;
+        #icon-heartbeat {
+            bottom: 25%;
+            right: 15%;
+            font-size: 3rem;
+            animation-duration: 13s;
+            animation-delay: -8s;
         }
 
-        .hero-buttons {
-            display: flex;
-            gap: 20px;
-            margin-top: 30px;
-            flex-wrap: wrap;
+        /* Typing animation cursor */
+        .typing-cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1.5rem;
+            /* md:h-8 */
+            background-color: #3b82f6;
+            /* blue-500 */
+            animation: blink 0.7s infinite;
         }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0;
+            }
+        }
+
+        /* Scroll-triggered animations */
+
 
         /* About Section */
         .about {
@@ -415,8 +633,6 @@
             overflow: hidden;
             box-shadow: var(--shadow);
             transition: var(--transition);
-            padding: 30px;
-            text-align: center;
             border-top: 4px solid var(--primary);
         }
 
@@ -425,16 +641,42 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
 
-        .service-icon {
-            font-size: 3rem;
-            color: var(--primary);
-            margin-bottom: 20px;
+        /* Updated Service Image Styles - Full Width Rectangle */
+        .service-image {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            background: linear-gradient(135deg, var(--light-blue), var(--light));
+        }
+
+        .service-image img {
+            /* Remove opacity:0 and add visibility: visible */
+            opacity: 1;
+            /* Changed from 0 to 1 */
+            visibility: visible;
+            /* Ensure image is visible */
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-image img {
+            opacity: 1;
+        }
+
+        .service-content {
+            padding: 25px;
+            text-align: center;
         }
 
         .service-card h3 {
             font-size: 1.5rem;
             margin-bottom: 15px;
             color: var(--dark);
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
         }
 
         /* Testimonials */
@@ -918,11 +1160,15 @@
 
             /* Service cards */
             .service-card {
-                padding: 25px;
+                border-radius: 10px;
             }
 
-            .service-icon {
-                font-size: 2.5rem;
+            .service-image {
+                height: 150px;
+            }
+
+            .service-content {
+                padding: 20px;
             }
 
             .service-card h3 {
@@ -1045,6 +1291,15 @@
             .section-title h2 {
                 font-size: 1.5rem;
             }
+
+            /* Service images */
+            .service-image {
+                height: 120px;
+            }
+
+            .service-content {
+                padding: 15px;
+            }
         }
 
         /* Landscape mode fixes for mobile */
@@ -1079,6 +1334,258 @@
                 overflow: auto;
             }
         }
+
+        /* Image Loading Animation */
+        .service-image img {
+            /* Remove opacity:0 and add visibility: visible */
+            opacity: 1;
+            /* Changed from 0 to 1 */
+            visibility: visible;
+            /* Ensure image is visible */
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-image img {
+            opacity: 1;
+        }
+
+
+        @keyframes shimmer {
+            0% {
+                background-position: -200% 0;
+            }
+
+            100% {
+                background-position: 200% 0;
+            }
+        }
+
+        :root {
+            --primary-blue: #0d6efd;
+            --secondary-green: #198754;
+            --accent-cyan: #0dcaf0;
+            --light-bg: #f8f9fa;
+            --dark-text: #212529;
+            --light-text: #ffffff;
+            --shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            --transition: all 0.3s ease;
+        }
+
+        #chatbot-container {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            z-index: 1000;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #chatbot-toggle {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-cyan));
+            color: var(--light-text);
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        #chatbot-toggle:hover {
+            transform: scale(1.1) rotate(15deg);
+        }
+
+        #chatbot-toggle .chatbot-icon-open {
+            display: block;
+        }
+
+        #chatbot-toggle .chatbot-icon-close {
+            display: none;
+        }
+
+        #chatbot-window {
+            width: 350px;
+            max-width: 90vw;
+            height: 500px;
+            max-height: 80vh;
+            background-color: var(--light-text);
+            border-radius: 15px;
+            box-shadow: var(--shadow);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            transform-origin: bottom right;
+            animation: slideIn 0.3s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.5);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        #chatbot-window.active {
+            display: flex;
+        }
+
+        #chatbot-toggle.active .chatbot-icon-open {
+            display: none;
+        }
+
+        #chatbot-toggle.active .chatbot-icon-close {
+            display: block;
+        }
+
+        .chatbot-header {
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
+            color: var(--light-text);
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .chatbot-header-icon {
+            font-size: 24px;
+        }
+
+        .chatbot-header-title h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .chatbot-header-title p {
+            margin: 0;
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        #chatbot-messages {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+            background-color: var(--light-bg);
+        }
+
+        .chat-message {
+            margin-bottom: 15px;
+            display: flex;
+            max-width: 85%;
+            animation: messageFadeIn 0.4s ease;
+        }
+
+        @keyframes messageFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chat-message-content {
+            padding: 10px 15px;
+            border-radius: 15px;
+            line-height: 1.5;
+            font-size: 0.95rem;
+        }
+
+        .bot-message {
+            background-color: #e9ecef;
+            color: var(--dark-text);
+            border-bottom-left-radius: 3px;
+            align-self: flex-start;
+        }
+
+        .user-message {
+            background-color: var(--primary-blue);
+            color: var(--light-text);
+            border-bottom-right-radius: 3px;
+            margin-left: auto;
+        }
+
+        .user-message .chat-message-content {
+            text-align: right;
+        }
+
+        .chatbot-input-container {
+            display: flex;
+            padding: 15px;
+            border-top: 1px solid #ddd;
+            background-color: var(--light-text);
+        }
+
+        #chatbot-input {
+            flex-grow: 1;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-family: 'Poppins', sans-serif;
+            transition: var(--transition);
+        }
+
+        #chatbot-input:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.2);
+        }
+
+        #chatbot-send {
+            background: var(--primary-blue);
+            color: var(--light-text);
+            border: none;
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            transition: var(--transition);
+        }
+
+        #chatbot-send:hover {
+            background: #0b5ed7;
+        }
+
+        /* Quick Replies */
+        .quick-replies {
+            padding: 0 20px 10px;
+            background-color: var(--light-bg);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .quick-reply-btn {
+            background-color: var(--light-text);
+            border: 1px solid var(--primary-blue);
+            color: var(--primary-blue);
+            padding: 6px 12px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: var(--transition);
+        }
+
+        .quick-reply-btn:hover {
+            background-color: var(--primary-blue);
+            color: var(--light-text);
+        }
     </style>
 </head>
 
@@ -1089,7 +1596,8 @@
             <nav class="navbar">
                 <a href="/" class="logo" style="text-decoration: none;">
                     <div class="logo-icon">
-                        <img src="/images/mnoficiallogo.png" alt="MN">
+                        <img src="/images/mnoficiallogo.png"
+                            alt="Best Eye Doctor & Dental Care in Bhandara - Madhurama Netralaye">
                     </div>
                     <div class="logo-text">
                         <h1>Madhurama Netralaye</h1>
@@ -1098,11 +1606,11 @@
                 </a>
 
                 <ul class="nav-links" id="navLinks">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="eye-doctor.html">Eye Doctor</a></li>
-                    <li><a href="dental-doctor.html">Dental Doctor</a></li>
-                    <li><a href="#services">Eye Services</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="eye-doctor.html">Eye</a></li>
+                    <li><a href="dental-doctor.html">Dental</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
 
@@ -1118,19 +1626,81 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container">
-            <div class="hero-content" data-aos="fade-right" data-aos-duration="1000">
-                <h1>Advanced Eye & Dental Care Under One Roof</h1>
-                <p>Experience world-class medical care with state-of-the-art technology and compassionate doctors
-                    dedicated to your well-being.</p>
-                <div class="hero-buttons">
-                    <a href="tel:+919028107222" class="btn btn-primary">
-                        <i class="fas fa-phone-alt"></i> Call Now
-                    </a>
-                    <a href="https://www.indiaopd.com/?RegNo=2009/03/0733" target="_blank" class="btn btn-secondary">
-                        <i class="fas fa-calendar-check"></i> Book on IndiaOPD
-                    </a>
+    <section id="hero" class="relative h-screen w-full flex items-center justify-center overflow-hidden">
+
+        <div class="hero-background"></div>
+        <div id="particle-container" class="animation-container"></div>
+        <div class="animation-container">
+            <!-- Eye Icon -->
+            <div id="icon-eye" class="floating-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                        d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z" />
+                </svg>
+            </div>
+            <!-- Tooth Icon -->
+            <div id="icon-tooth" class="floating-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                        d="M19.5 5c-1.06 0-2.05.5-2.68 1.37L16.2 7.5l-1.95-1.95c-.38-.38-.89-.6-1.42-.6H9.5c-.53 0-1.04.22-1.42.6L6.13 7.5l-.62-1.13C4.88 5.5 3.89 5 2.83 5c-1.04 0-1.98.54-2.52 1.4L0 7.07V11h5.5v-1H1.2l.33-.57c.23-.4.65-.63 1.1-.63.48 0 .89.26 1.12.69l.63 1.14L6.2 8.78c.38-.38.89-.6 1.42-.6h3.76c.53 0 1.04.22 1.42.6l1.82 1.82 1.82-1.82c.38-.38.89-.6 1.42-.6h3.76c.53 0 1.04.22 1.42.6l1.82 1.82.63-1.14c.23-.43.64-.69 1.12-.69.45 0 .87.23 1.1.63l.33.57H18.5V7.07l-.31-.67C17.65 5.54 16.71 5 15.67 5h-.34c-.53 0-1.04.22-1.42.6L12 7.5l-1.9-1.9c-.38-.38-.89-.6-1.42-.6H5.5c-.53 0-1.04.22-1.42.6L2.27 7.5H2v13h20V7.5h-.27L19.92 5.6C19.38 5.22 18.87 5 18.33 5c-.56 0-1.08.24-1.44.65l-1.22 1.22 1.22 1.22c.36.36.88.6 1.44.6s1.08-.24 1.44-.6l1.22-1.22.33-.57c.23-.4.65-.63 1.1-.63.48 0 .89.26 1.12.69l.63 1.14L22 8.78c.38-.38.89-.6 1.42-.6h.08c1.04 0 1.98.54 2.52 1.4L24 7.07V11h-5.5v-1h4.3l-.33-.57c-.23-.4-.65-.63-1.1-.63-.48 0-.89.26-1.12.69l-.63 1.14-1.82-1.82c-.38-.38-.89-.6-1.42-.6h-3.76c-.53 0-1.04.22-1.42.6L12 7.5 9.18 4.68C8.8 4.29 8.29 4.07 7.76 4.07H4.5c-.53 0-1.04.22-1.42.6L1.27 6.5H1v13h22V6.5h-.27l-1.81-2.92zM7 13h10v2H7zm0 4h10v2H7z" />
+                </svg>
+            </div>
+            <!-- Stethoscope Icon -->
+            <div id="icon-stethoscope" class="floating-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"
+                    fill="currentColor">
+                    <path
+                        d="M18 3.5c-1.93 0-3.5 1.57-3.5 3.5V11c0 1.1-.9 2-2 2s-2-.9-2-2V7H9v4c0 2.21 1.79 4 4 4s4-1.79 4-4V7c0-1.93-1.57-3.5-3.5-3.5zM6 3.5C4.07 3.5 2.5 5.07 2.5 7v4c0 1.1.9 2 2 2s2-.9 2-2V7c0-1.93-1.57-3.5-3.5-3.5zm6 11.5c-2.21 0-4 1.79-4 4v2h8v-2c0-2.21-1.79-4-4-4z" />
+                </svg>
+            </div>
+            <!-- Heartbeat Icon -->
+            <div id="icon-heartbeat" class="floating-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256"
+                    fill="currentColor">
+                    <path
+                        d="M240 98c-8.8-10-21.1-18-35.2-18c-11.4 0-22.2 5.5-30.8 14.9L128 144.8l-46-50.7c-8.6-9.4-19.4-14.9-30.8-14.9C36.9 80 24.6 88 16 98C6.1 109.1 2 123.4 2 138c0 26.3 12.4 51.2 35.2 72.8l85.2 80.3a12 12 0 0 0 15.2 0l85.2-80.3C243.6 189.2 254 164.3 254 138c0-14.6-4.1-28.9-14-40Z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-8 h-full">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full">
+                <!-- Left Column: Content -->
+                <div class="content-column text-center lg:text-left transition-all duration-500">
+                    <div class="glass-container glowing-border rounded-3xl p-8 lg:p-12">
+                        <div class="flex items-center justify-center lg:justify-start mb-4">
+                            <svg class="h-12 w-12 text-blue-600 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                            </svg>
+                            <span class="text-xl font-semibold text-gray-800">Madhurama Clinic</span>
+                        </div>
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Welcome to Madhurama
+                            Netralaye & Dental Clinic</h1>
+                        <div class="h-10 md:h-12 flex items-center justify-center lg:justify-start mb-8">
+                            <p id="typing-text" class="text-lg md:text-2xl font-semibold text-blue-600"></p>
+                            <span class="typing-cursor ml-1"></span>
+                        </div>
+                        <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <a href="https://www.indiaopd.com/?RegNo=2009/03/0733"
+                                class="w-full sm:w-auto bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 hover:scale-105 transform transition-all duration-300 ease-in-out">
+                                Book Appointment
+                            </a>
+                            <a href="#services"
+                                class="w-full sm:w-auto bg-transparent border-2 border-blue-600 text-blue-600 font-semibold py-3 px-8 rounded-full hover:bg-blue-600 hover:text-white hover:scale-105 transform transition-all duration-300 ease-in-out">
+                                View Services
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div class="image-column hidden lg:flex justify-center items-center transition-all duration-500">
+                    <img src="/images/madhuramaeyehospital.png" alt="Doctor with patient"
+                        class="max-w-md lg:max-w-lg xl:max-w-xl rounded-3xl shadow-2xl object-cover">
                 </div>
             </div>
         </div>
@@ -1140,16 +1710,18 @@
     <section class="about">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-duration="800">
-                <h2>Our Expert Doctors</h2>
+                <h2>Expert Doctors in Bhandara</h2>
+                <p>Meet our experienced ophthalmologist and dental surgeon serving Bhandara and surrounding areas</p>
             </div>
             <div class="about-content">
                 <div class="about-card" data-aos="fade-right" data-aos-duration="1000">
                     <div class="doctor-image doctor-1"></div>
                     <div class="doctor-info">
                         <h3>Dr. Durgesh Pashine</h3>
-                        <span class="specialty">Ophthalmologist</span>
-                        <p>With extensive experience in eye care, Dr. Durgesh specializes in cataract surgery, glaucoma
-                            treatment, and retinal procedures. Trained under Padmashree Dr. Tatyarao Lahane.</p>
+                        <span class="specialty">Best Ophthalmologist in Bhandara</span>
+                        <p>Leading eye specialist in Bhandara with extensive experience in cataract surgery, LASIK,
+                            glaucoma treatment, and retinal procedures. Trained under Padmashree Dr. Tatyarao Lahane.
+                        </p>
                         <a href="eye-doctor.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -1158,9 +1730,10 @@
                     <div class="doctor-image doctor-2"></div>
                     <div class="doctor-info">
                         <h3>Dr. Poonam Pashine</h3>
-                        <span class="specialty">Dental Surgeon</span>
-                        <p>Dr. Poonam brings expertise in preventive care, cosmetic dentistry, and smile restoration.
-                            With her MBA background, she leads a team of super-specialist dental professionals.</p>
+                        <span class="specialty">Best Dental Surgeon in Bhandara</span>
+                        <p>Expert dental surgeon in Bhandara specializing in preventive care, cosmetic dentistry, dental
+                            implants, and smile restoration. MBA qualified with a team of super-specialist dental
+                            professionals.</p>
                         <a href="dental-doctor.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
@@ -1173,9 +1746,9 @@
         <div class="container">
             <div class="cataract-content">
                 <div class="cataract-text" data-aos="fade-right" data-aos-duration="1000">
-                    <h2>Advanced Cataract Surgery</h2>
+                    <h2>Best Cataract Surgery in Bhandara</h2>
                     <p>Experience painless cataract removal with our state-of-the-art phacoemulsification technology.
-                        Performed by Dr. Durgesh Pashine, our cataract surgeries ensure:</p>
+                        Dr. Durgesh Pashine performs advanced cataract surgeries in Bhandara with:</p>
 
                     <div class="features">
                         <div class="feature" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
@@ -1195,7 +1768,7 @@
                         <div class="feature" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                             <i class="fas fa-dollar-sign"></i>
                             <div>
-                                <h4>Affordable</h4>
+                                <h4>Affordable in Bhandara</h4>
                                 <p>Cost-effective solutions for all</p>
                             </div>
                         </div>
@@ -1222,117 +1795,157 @@
     <section class="services" id="services">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-duration="800">
-                <h2>Our Eye Care Services</h2>
+                <h2>Complete Eye Care Services in Bhandara</h2>
+                <p>Comprehensive eye treatments with advanced technology at Bhandara's premier eye clinic</p>
             </div>
 
             <div class="services-grid">
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800">
-                    <div class="service-icon">
-                        <i class="fas fa-eye"></i>
+                    <div class="service-image">
+                        <img src="/images/services/cataractsurgerywithphaco.jpeg" alt="Cataract Surgery Bhandara"
+                            loading="lazy">
                     </div>
-                    <h3>Cataract Surgery with Phaco</h3>
-                    <p>Stitchless surgery using advanced phaco technology for quick recovery.</p>
+                    <div class="service-content">
+                        <h3>Cataract Surgery with Phaco</h3>
+                        <p>Advanced stitchless cataract surgery using phacoemulsification technology for quick recovery
+                            in Bhandara.</p>
+                    </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
-                    <div class="service-icon">
-                        <i class="fas fa-low-vision"></i>
+                    <div class="service-image">
+                        <img src="/images/services/foldablelenssurgery.jpeg" alt="Foldable Lens Surgery Bhandara"
+                            loading="lazy">
                     </div>
-                    <h3>Foldable Lens Surgery</h3>
-                    <p>Ideal for patients with diabetes, hypertension, asthma, and younger patients.</p>
+                    <div class="service-content">
+                        <h3>Foldable Lens Surgery</h3>
+                        <p>Premium foldable IOL implants ideal for patients with diabetes, hypertension, asthma, and
+                            younger patients.</p>
+                    </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
-                    <div class="service-icon">
-                        <i class="fas fa-eye-dropper"></i>
+                    <div class="service-image">
+                        <img src="/images/services/retinaexamstreatment.jpeg" alt="Retina Treatment Bhandara"
+                            loading="lazy">
                     </div>
-                    <h3>Retina Exams & Treatment</h3>
-                    <p>Comprehensive retinal care for various conditions and diseases.</p>
+                    <div class="service-content">
+                        <h3>Retina Exams & Treatment</h3>
+                        <p>Comprehensive retinal care for diabetic retinopathy, macular degeneration, and retinal
+                            detachment.</p>
+                    </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
-                    <div class="service-icon">
-                        <i class="fas fa-microscope"></i>
+                    <div class="service-image">
+                        <img src="/images/services/advanceeyetesting.jpeg" alt="Advanced Eye Testing Bhandara"
+                            loading="lazy">
                     </div>
-                    <h3>Advanced Eye Testing</h3>
-                    <p>State-of-the-art diagnostic equipment for precise evaluations.</p>
+                    <div class="service-content">
+                        <h3>Advanced Eye Testing</h3>
+                        <p>State-of-the-art diagnostic equipment including OCT, fundus photography, and visual field
+                            testing.</p>
+                    </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-                    <div class="service-icon">
-                        <i class="fas fa-tint"></i>
+                    <div class="service-image">
+                        <img src="/images/services/glaucomatreatment.jpeg" alt="Glaucoma Treatment Bhandara"
+                            loading="lazy">
                     </div>
-                    <h3>Glaucoma Treatment</h3>
-                    <p>Medical and surgical management for glaucoma patients.</p>
+                    <div class="service-content">
+                        <h3>Glaucoma Treatment</h3>
+                        <p>Early detection and comprehensive medical and surgical management for glaucoma patients.</p>
+                    </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="500">
-                    <div class="service-icon">
-                        <i class="fas fa-sync-alt"></i>
+                    <div class="service-image">
+                        <img src="/images/services/squintcorrection.jpeg" alt="Squint Correction Bhandara"
+                            loading="lazy">
                     </div>
-                    <h3>Squint Correction</h3>
-                    <p>Surgical correction for misaligned eyes in children and adults.</p>
+                    <div class="service-content">
+                        <h3>Squint Correction</h3>
+                        <p>Surgical correction for misaligned eyes in children and adults with excellent cosmetic
+                            results.</p>
+                    </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
-                    <div class="service-icon">
-                        <i class="fas fa-tint-slash"></i>
+                    <div class="service-image">
+                        <img src="/images/services/nasolacrimalductsurgery.jpeg" alt="Tear Duct Surgery Bhandara"
+                            loading="lazy">
                     </div>
-                    <h3>Nasolacrimal Duct Surgery</h3>
-                    <p>Treatment for blocked tear ducts causing watery eyes.</p>
+                    <div class="service-content">
+                        <h3>Nasolacrimal Duct Surgery</h3>
+                        <p>Effective treatment for blocked tear ducts causing watery eyes and chronic infections.</p>
+                    </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="700">
-                    <div class="service-icon">
-                        <i class="fas fa-glasses"></i>
+                    <div class="service-image">
+                        <img src="/images/services/contactlensservices.jpeg" alt="Contact Lens Services Bhandara"
+                            loading="lazy">
                     </div>
-                    <h3>Contact Lens Services</h3>
-                    <p>Fitting and consultation for all types of contact lenses.</p>
+                    <div class="service-content">
+                        <h3>Contact Lens Services</h3>
+                        <p>Professional fitting and consultation for soft, hard, and specialty contact lenses.</p>
+                    </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
-                    <div class="service-icon">
-                        <i class="fas fa-bolt"></i>
+                    <div class="service-image">
+                        <img src="/images/services/lasicvisioncorrection.jpeg" alt="LASIK Surgery Bhandara"
+                            loading="lazy">
                     </div>
-                    <h3>LASIK Vision Correction</h3>
-                    <p>Laser vision correction for freedom from glasses.</p>
+                    <div class="service-content">
+                        <h3>LASIK Vision Correction</h3>
+                        <p>Advanced laser vision correction for freedom from glasses and contact lenses.</p>
+                    </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="900">
-                    <div class="service-icon">
-                        <i class="fas fa-eye-slash"></i>
+                    <div class="service-image">
+                        <img src="/images/services/cornealdiseasetreatment.jpeg"
+                            alt="Corneal Disease Treatment Bhandara" loading="lazy">
                     </div>
-                    <h3>Corneal Disease Treatment</h3>
-                    <p>Specialized care for corneal conditions and infections.</p>
+                    <div class="service-content">
+                        <h3>Corneal Disease Treatment</h3>
+                        <p>Specialized care for corneal ulcers, keratoconus, corneal dystrophies, and infections.</p>
+                    </div>
                 </div>
 
                 <div class="service-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000">
-                    <div class="service-icon">
-                        <i class="fas fa-wind"></i>
+                    <div class="service-image">
+                        <img src="/images/services/dryeyesolution.jpeg" alt="Dry Eye Treatment Bhandara" loading="lazy">
                     </div>
-                    <h3>Dry Eye Solutions</h3>
-                    <p>Comprehensive management for chronic dry eye syndrome.</p>
+                    <div class="service-content">
+                        <h3>Dry Eye Solutions</h3>
+                        <p>Comprehensive management for chronic dry eye syndrome with latest treatment options.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials" id="testimonials">
+    <!-- <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-duration="800">
-                <h2>Happy Customers</h2>
+                <h2>Happy Patients from Bhandara</h2>
+                <p>Read what our satisfied patients say about their experience at Madhurama Netralaye</p>
             </div>
 
             <div class="testimonial-grid">
                 <div class="testimonial-card" data-aos="fade-up" data-aos-duration="800">
                     <div class="patient-info">
                         <div class="patient-avatar">
-                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Patient">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg"
+                                alt="Cataract Surgery Patient Bhandara">
                         </div>
                         <div class="patient-details">
                             <h4>Rajesh Kumar</h4>
-                            <span class="treatment">Cataract Surgery</span>
+                            <span class="treatment">Cataract Surgery Patient</span>
                         </div>
                     </div>
                     <div class="stars">
@@ -1342,18 +1955,19 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="quote">"Dr. Durgesh performed my cataract surgery with such precision. I was back to
-                        reading my newspaper the very next day. Painless and affordable!"</p>
+                    <p class="quote">Dr. Durgesh performed my cataract surgery with such precision. Best eye doctor in
+                        Bhandara! I was back to reading my newspaper the very next day. Painless and affordable!</p>
                 </div>
 
                 <div class="testimonial-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <div class="patient-info">
                         <div class="patient-avatar">
-                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Patient">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg"
+                                alt="Dental Implant Patient Bhandara">
                         </div>
                         <div class="patient-details">
                             <h4>Priya Sharma</h4>
-                            <span class="treatment">Dental Implants</span>
+                            <span class="treatment">Dental Implants Patient</span>
                         </div>
                     </div>
                     <div class="stars">
@@ -1363,18 +1977,20 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="quote">"Dr. Poonam and her team gave me back my confident smile. The entire process was
-                        comfortable and the results are amazing. Highly recommended!"</p>
+                    <p class="quote">Dr. Poonam and her team gave me back my confident smile. Best dental clinic in
+                        Bhandara! The entire process was comfortable and the results are amazing. Highly recommended!
+                    </p>
                 </div>
 
                 <div class="testimonial-card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="patient-info">
                         <div class="patient-avatar">
-                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Patient">
+                            <img src="https://randomuser.me/api/portraits/men/22.jpg"
+                                alt="LASIK Surgery Patient Bhandara">
                         </div>
                         <div class="patient-details">
                             <h4>Vikram Singh</h4>
-                            <span class="treatment">LASIK Surgery</span>
+                            <span class="treatment">LASIK Surgery Patient</span>
                         </div>
                     </div>
                     <div class="stars">
@@ -1384,79 +2000,87 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="quote">"After 15 years of wearing glasses, LASIK at Madhurama has changed my life. The
-                        procedure was quick and the staff was incredibly supportive throughout."</p>
+                    <p class="quote">After 15 years of wearing glasses, LASIK at Madhurama has changed my life. Best
+                        LASIK surgeon in Bhandara! The procedure was quick and the staff was incredibly supportive
+                        throughout.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-10f35c39-6b39-49c6-9f4e-589a88d80cac" data-elfsight-app-lazy></div>
+
 
     <!-- FAQ Section -->
     <section class="faq-section">
         <div class="container">
             <div class="section-title" data-aos="fade-up" data-aos-duration="800">
-                <h2>Frequently Asked Questions</h2>
-                <p>Find answers to common questions about our clinic</p>
+                <h2>Frequently Asked Questions - Bhandara</h2>
+                <p>Common questions about our eye and dental services in Bhandara, Maharashtra</p>
             </div>
 
             <div class="faq-container">
                 <div class="faq-item" data-aos="fade-up" data-aos-duration="800">
                     <div class="faq-question">
-                        What services do you provide for eye care?
+                        What eye care services are available in Bhandara?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>We offer comprehensive eye care services including cataract surgery with phaco machine, LASIK
-                            vision correction, glaucoma treatment, retina exams, squint correction, contact lens
-                            services, dry eye treatment, and pediatric ophthalmology.</p>
+                        <p>We offer comprehensive eye care services in Bhandara including cataract surgery with phaco
+                            machine, LASIK vision correction, glaucoma treatment, retina exams, squint correction,
+                            contact lens services, dry eye treatment, and pediatric ophthalmology. Dr. Durgesh Pashine
+                            is the leading eye specialist in Bhandara district.</p>
                     </div>
                 </div>
 
                 <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
                     <div class="faq-question">
-                        What dental services are available at your clinic?
+                        What dental services are available at your Bhandara clinic?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Our dental department provides a wide range of services including preventive care, cosmetic
-                            dentistry, dental implants, orthodontics (braces and Invisalign), root canal treatment, gum
-                            disease treatment, oral surgery, and pediatric dentistry.</p>
+                        <p>Our dental department in Bhandara provides preventive care, cosmetic dentistry, dental
+                            implants, orthodontics (braces and Invisalign), root canal treatment, gum disease treatment,
+                            oral surgery, and pediatric dentistry. Dr. Poonam Pashine leads our team of dental
+                            specialists in Bhandara.</p>
                     </div>
                 </div>
 
                 <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
                     <div class="faq-question">
-                        How can I book an appointment?
+                        How can I book an appointment in Bhandara?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>You can book an appointment by calling us at +91 90281 07222, booking online through
-                            IndiaOPD, or by visiting our clinic during working hours. For emergencies, we're available
-                            24/7.</p>
+                        <p>You can book an appointment at our Bhandara clinic by calling us at +91 90281 07222, booking
+                            online through IndiaOPD, or by visiting our clinic at Rajiv Gandhi Chowk, Kham Talav Road
+                            during working hours. For emergencies in Bhandara, we're available 24/7.</p>
                     </div>
                 </div>
 
                 <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                     <div class="faq-question">
-                        Do you accept insurance?
+                        Do you accept insurance at Bhandara clinic?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Yes, we accept most major health insurance plans. Please bring your insurance card and
-                            identification when you visit. Our staff will be happy to assist you with insurance claims
-                            and paperwork.</p>
+                        <p>Yes, we accept most major health insurance plans at our Bhandara clinic. Please bring your
+                            insurance card and identification when you visit. Our staff will assist you with insurance
+                            claims and paperwork for treatments in Bhandara.</p>
                     </div>
                 </div>
 
                 <div class="faq-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
                     <div class="faq-question">
-                        What COVID-19 safety measures are in place?
+                        What areas do you serve around Bhandara?
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>We follow strict COVID-19 safety protocols including mandatory masks, temperature checks,
-                            frequent sanitization, social distancing in waiting areas, and HEPA air filtration systems.
-                            All our staff are fully vaccinated.</p>
+                        <p>We serve patients from Bhandara, Nagpur, Gondia, Chandrapur, Wardha, and surrounding areas in
+                            Maharashtra. Many patients travel to our Bhandara clinic for specialized eye and dental
+                            treatments due to our reputation for excellence.</p>
                     </div>
                 </div>
             </div>
@@ -1471,45 +2095,42 @@
                     <div class="footer-logo">
                         <div class="logo">
                             <div class="logo-icon">
-                                <img src="/images/mnoficiallogo.png" alt="MN">
-                                <!-- <i class="fas fa-eye fa-2x" style="color: var(--accent);"></i>
-                                <i class="fas fa-tooth fa-2x" style="color: white; margin-left: -10px;"></i> -->
+                                <img src="/images/mnoficiallogo.png" alt="Best Eye and Dental Clinic Bhandara">
                             </div>
                             <div class="logo-text">
                                 <h1 style="color: white;">Madhurama Netralaye</h1>
-                                <p style="color: #ccc;">& Dental Clinic</p>
+                                <p style="color: #ccc;">& Dental Clinic - Bhandara</p>
                             </div>
                         </div>
                     </div>
-                    <p>Providing advanced eye and dental care with compassion and cutting-edge technology since 2010.
-                    </p>
+                    <p>Providing advanced eye and dental care in Bhandara with compassion and cutting-edge technology
+                        since
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
 
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="eye-doctor.html">Eye Doctor</a></li>
-                        <li><a href="dental-doctor.html">Dental Doctor</a></li>
-                        <li><a href="#services">Eye Services</a></li>
-                        <li><a href="#cataract">Cataract Surgery</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="eye-doctor.html">Eye Doctor Bhandara</a></li>
+                        <li><a href="dental-doctor.html">Dental Doctor Bhandara</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="blog.html">Blog</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-links">
-                    <h4>Contact Us</h4>
+                    <h4>Contact Us - Bhandara</h4>
                     <div class="contact-info">
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Rajiv Gandhi Chowk, Kham Talav Road, near Dr.Wane's Prayas Hosital, Bhandara,
+                            <span>Rajiv Gandhi Chowk, Kham Talav Road, near Dr.Wane's Prayas Hospital, Bhandara,
                                 Maharashtra 441904</span>
                         </div>
                         <div class="contact-item">
@@ -1529,10 +2150,39 @@
             </div>
 
             <div class="copyright">
-                <p>&copy; 2025 Madhurama Netralaye & Dental Clinic. All Rights Reserved.</p>
+                <p>&copy; 2025 Madhurama Netralaye & Dental Clinic, Bhandara. All Rights Reserved. | Best Eye Doctor &
+                    Dental Care in Bhandara, Maharashtra</p>
             </div>
         </div>
     </footer>
+    <!-- Chatbot HTML -->
+    <div id="chatbot-container">
+        <div id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="chatbot-header-icon">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chatbot-header-title">
+                    <h3>Virtual Assistant</h3>
+                    <p>Madhurama Netralaye</p>
+                </div>
+            </div>
+            <div id="chatbot-messages">
+                <!-- Messages will be appended here -->
+            </div>
+            <div class="quick-replies" id="quick-replies-container">
+                <!-- Quick replies will be appended here -->
+            </div>
+            <div class="chatbot-input-container">
+                <input type="text" id="chatbot-input" placeholder="Type a message...">
+                <button id="chatbot-send"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+        <button id="chatbot-toggle">
+            <i class="fas fa-comment-dots chatbot-icon-open"></i>
+            <i class="fas fa-times chatbot-icon-close"></i>
+        </button>
+    </div>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -1576,6 +2226,57 @@
             }
         });
 
+        //Hero section typing effect
+        document.addEventListener('DOMContentLoaded', function () {
+            // --- Typing Animation ---
+            const typingTextElement = document.getElementById('typing-text');
+            const services = ["Eye Care", "Dental Care", "Pediatric Eye Surgery", "Laser Cataract Surgery"];
+            let serviceIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function type() {
+                const currentService = services[serviceIndex];
+                if (isDeleting) {
+                    typingTextElement.textContent = currentService.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    typingTextElement.textContent = currentService.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+
+                if (!isDeleting && charIndex === currentService.length) {
+                    isDeleting = true;
+                    setTimeout(type, 2000); // Pause at end of word
+                } else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    serviceIndex = (serviceIndex + 1) % services.length;
+                    setTimeout(type, 500); // Pause before new word
+                } else {
+                    const typingSpeed = isDeleting ? 50 : 120;
+                    setTimeout(type, typingSpeed);
+                }
+            }
+            type();
+
+            // --- Scroll Animations ---
+            window.addEventListener('scroll', () => {
+                const heroSection = document.getElementById('hero');
+                if (window.scrollY > 50) {
+                    heroSection.classList.add('scrolled');
+                } else {
+                    heroSection.classList.remove('scrolled');
+                }
+
+                // Parallax for the background
+                const bg = document.querySelector('.hero-background');
+                if (bg) {
+                    const scrollPosition = window.pageYOffset;
+                    bg.style.transform = 'translateY(' + scrollPosition * 0.3 + 'px)';
+                }
+            });
+        });
+
         // FAQ accordion functionality
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
@@ -1612,30 +2313,51 @@
             });
         });
 
-        // Prevent horizontal scroll on mobile
-        function preventHorizontalScroll() {
-            const maxWidth = window.innerWidth;
-            const elements = document.querySelectorAll('*');
+        // Image loading functionality
+        function handleImageLoading() {
+            const serviceImages = document.querySelectorAll('.service-image img');
 
-            elements.forEach(el => {
-                if (el.offsetWidth > maxWidth) {
-                    console.warn('Element causing horizontal scroll:', el);
+            serviceImages.forEach(img => {
+                // Images are now visible by default, just add loaded class
+                if (img.complete) {
+                    img.classList.add('loaded');
+                } else {
+                    img.addEventListener('load', function () {
+                        this.classList.add('loaded');
+                    });
+
+                    img.addEventListener('error', function () {
+                        // Replace with placeholder if image fails to load
+                        this.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkltYWdlIE5vdCBGb3VuZDwvdGV4dD48L3N2Zz4=';
+                        this.classList.add('loaded');
+                    });
                 }
             });
         }
 
-        // Check on load and resize
-        window.addEventListener('load', preventHorizontalScroll);
-        window.addEventListener('resize', preventHorizontalScroll);
 
-        // Add active class to current navigation item
-        const currentLocation = location.pathname;
-        const menuItems = document.querySelectorAll('.nav-links a');
+        // Lazy loading observer
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const img = entry.target;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                    }
+                    observer.unobserve(img);
+                }
+            });
+        });
 
-        menuItems.forEach(item => {
-            if (item.getAttribute('href') === currentLocation.split('/').pop()) {
-                item.classList.add('active');
-            }
+        // Initialize image loading
+        document.addEventListener('DOMContentLoaded', function () {
+            handleImageLoading();
+
+            // Observe lazy loading images
+            document.querySelectorAll('img[data-src]').forEach(img => {
+                imageObserver.observe(img);
+            });
         });
 
         // Handle window resize
@@ -1649,7 +2371,530 @@
                 }
             }, 250);
         });
+
+        // Add active class to current navigation item
+        const currentLocation = location.pathname;
+        const menuItems = document.querySelectorAll('.nav-links a');
+
+        menuItems.forEach(item => {
+            if (item.getAttribute('href') === currentLocation.split('/').pop()) {
+                item.classList.add('active');
+            }
+        });
+
+        // Chatbot JavaScript
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatbotToggle = document.getElementById('chatbot-toggle');
+            const chatbotWindow = document.getElementById('chatbot-window');
+            const messagesContainer = document.getElementById('chatbot-messages');
+            const inputField = document.getElementById('chatbot-input');
+            const sendButton = document.getElementById('chatbot-send');
+            const quickRepliesContainer = document.getElementById('quick-replies-container');
+
+            // --- Knowledge Base ---
+            const knowledgeBase = {
+                // Greetings
+                "hello": "Hello! Welcome to Madhurama Netralaye & Dental Clinic. How can I help you today?",
+                "hi": "Hi there! Welcome to Madhurama Netralaye & Dental Clinic. What information are you looking for?",
+                "hey": "Hey! Welcome to Madhurama Netralaye & Dental Clinic. How can I assist you?",
+
+                // Services
+                "services": "We offer a wide range of eye care and dental services. For eyes, we provide Cataract Surgery, LASIK, Glaucoma treatment, and more. For dental care, we offer preventive care, implants, cosmetic dentistry, etc. What specific service are you interested in?",
+                "offer": "We offer a wide range of eye care and dental services. For eyes, we provide Cataract Surgery, LASIK, Glaucoma treatment, and more. For dental care, we offer preventive care, implants, cosmetic dentistry, etc. What specific service are you interested in?",
+                "eye services": "Our eye care services include: Cataract Surgery (Phaco), LASIK, Glaucoma Management, Retinal Care, Squint Correction, Dry Eye Treatment, and much more. Do you have a specific eye condition you'd like to know about?",
+                "ophthalmology": "Our eye care services include: Cataract Surgery (Phaco), LASIK, Glaucoma Management, Retinal Care, Squint Correction, Dry Eye Treatment, and much more. Do you have a specific eye condition you'd like to know about?",
+                "dental": "Our dental clinic, led by Dr. Poonam Pashine, offers preventive care, cosmetic dentistry, dental implants, orthodontics, root canals, and pediatric dentistry. What can we help you with?",
+                "dentist": "Our dental clinic, led by Dr. Poonam Pashine, offers preventive care, cosmetic dentistry, dental implants, orthodontics, root canals, and pediatric dentistry. What can we help you with?",
+                "cataract": "We specialize in advanced, painless, stitchless cataract surgery using Phacoemulsification. The procedure takes about 15-20 minutes, and recovery is very fast. Would you like to book an appointment?",
+                "motibindu": "We specialize in advanced, painless, stitchless cataract surgery using Phacoemulsification. The procedure takes about 15-20 minutes, and recovery is very fast. Would you like to book an appointment?",
+                "lasik": "Yes, we offer LASIK vision correction for freedom from glasses and contact lenses. It's a safe and effective procedure performed by our expert ophthalmologist, Dr. Durgesh Pashine.",
+
+                // Doctors
+                "doctor": "Our expert team is led by Dr. Durgesh Pashine, our chief Ophthalmologist, and Dr. Poonam Pashine, our Dental Surgeon and Hospital Administrator. Which specialist would you like to know more about?",
+                "dr durgesh": "Dr. Durgesh Pashine (M.B.B.S., M.S. OPHTHAL.) is our leading ophthalmologist with over 15 years of experience. He specializes in cataract, glaucoma, and LASIK surgery and was trained by the renowned Padmashree Dr. Tatyarao Lahane.",
+                "dr poonam": "Dr. Poonam Pashine (BDS, MBA) is our expert Dental Surgeon and Hospital Administrator. She leads a team of super-specialists and focuses on holistic, patient-centric dental care using state-of-the-art technology.",
+
+                // Contact & Location
+                "location": "We are located at: Rajiv Gandhi Chowk, Kham Talav Road, near Dr. Wane's Prayas Hospital, Bhandara, Maharashtra 441904.",
+                "address": "We are located at: Rajiv Gandhi Chowk, Kham Talav Road, near Dr. Wane's Prayas Hospital, Bhandara, Maharashtra 441904.",
+                "hours": "Our clinic is open from 9:00 AM to 8:00 PM from Monday to Sunday. We are closed on Tuesdays. We also offer 24/7 emergency services.",
+                "timing": "Our clinic is open from 9:00 AM to 8:00 PM from Monday to Sunday. We are closed on Tuesdays. We also offer 24/7 emergency services.",
+                "contact": "You can reach us at +91 90281 07222 or +91 77700 09535. You can also email us at info@madhuramanetralaye.com.",
+                "phone": "Our phone numbers are +91 90281 07222 and +91 77700 09535.",
+                "email": "Our email address is info@madhuramanetralaye.com.",
+
+                // Appointments & Misc
+                "appointment": "You can book an appointment by calling us at +91 90281 07222 or online through the IndiaOPD website. Here is the link: <a href='https://www.indiaopd.com/?RegNo=2009/03/0733' target='_blank'>Book on IndiaOPD</a>.",
+                "book": "You can book an appointment by calling us at +91 90281 07222 or online through the IndiaOPD website. Here is the link: <a href='https://www.indiaopd.com/?RegNo=2009/03/0733' target='_blank'>Book on IndiaOPD</a>.",
+                "insurance": "Yes, we accept most major health insurance plans. Please bring your insurance card and ID when you visit, and our staff will be happy to assist you with the paperwork.",
+                "cost": "For details on treatment costs, please contact our clinic directly at +91 90281 07222. Our team can provide you with accurate and personalized information.",
+                "price": "For details on treatment costs, please contact our clinic directly at +91 90281 07222. Our team can provide you with accurate and personalized information.",
+
+                // Closing
+                "bye": "Goodbye! Have a great day.",
+                "thank you": "You're welcome! Is there anything else I can help you with?",
+                "thanks": "You're welcome! Is there anything else I can help you with?",
+            };
+
+            const quickReplies = [
+                "Services", "Timings", "Book Appointment", "Contact"
+            ];
+
+            // --- Functions ---
+            function toggleChatbot() {
+                chatbotWindow.classList.toggle('active');
+                chatbotToggle.classList.toggle('active');
+                if (chatbotWindow.classList.contains('active')) {
+                    displayWelcomeMessage();
+                }
+            }
+
+            function displayWelcomeMessage() {
+                if (messagesContainer.children.length === 0) {
+                    addBotMessage("Hello! Welcome to Madhurama Netralaye & Dental Clinic. How can I help you today?");
+                    displayQuickReplies();
+                }
+            }
+
+            function displayQuickReplies() {
+                quickRepliesContainer.innerHTML = '';
+                quickReplies.forEach(reply => {
+                    const button = document.createElement('button');
+                    button.classList.add('quick-reply-btn');
+                    button.textContent = reply;
+                    button.onclick = () => handleUserInput(reply);
+                    quickRepliesContainer.appendChild(button);
+                });
+            }
+
+            function addMessage(content, sender) {
+                const messageWrapper = document.createElement('div');
+                messageWrapper.classList.add('chat-message', `${sender}-message`);
+
+                const messageContent = document.createElement('div');
+                messageContent.classList.add('chat-message-content');
+                messageContent.innerHTML = content; // Use innerHTML to render links
+
+                messageWrapper.appendChild(messageContent);
+                messagesContainer.appendChild(messageWrapper);
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+
+            function addBotMessage(content) {
+                addMessage(content, 'bot');
+            }
+
+            function addUserMessage(content) {
+                addMessage(content, 'user');
+            }
+
+            function getBotResponse(userInput) {
+                const lowerCaseInput = userInput.toLowerCase().trim();
+                let bestMatch = null;
+                let highestScore = 0;
+
+                for (const keyword in knowledgeBase) {
+                    const score = lowerCaseInput.includes(keyword) ? keyword.length : 0;
+                    if (score > highestScore) {
+                        highestScore = score;
+                        bestMatch = knowledgeBase[keyword];
+                    }
+                }
+
+                return bestMatch || "I'm sorry, I don't have information on that. You can ask me about our services, doctors, location, or appointments. For detailed queries, please call us at +91 90281 07222.";
+            }
+
+            function handleUserInput(message = null) {
+                const userInput = message || inputField.value.trim();
+                if (userInput === '') return;
+
+                addUserMessage(userInput);
+                inputField.value = '';
+                quickRepliesContainer.innerHTML = ''; // Hide quick replies after user interacts
+
+                setTimeout(() => {
+                    const botResponse = getBotResponse(userInput);
+                    addBotMessage(botResponse);
+                    // Show quick replies again if it's a general topic
+                    if (["services", "contact", "doctor", "hours"].some(term => userInput.toLowerCase().includes(term))) {
+                        displayQuickReplies();
+                    }
+                }, 500);
+            }
+
+            // --- Event Listeners ---
+            chatbotToggle.addEventListener('click', toggleChatbot);
+            sendButton.addEventListener('click', () => handleUserInput());
+            inputField.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') {
+                    handleUserInput();
+                }
+            });
+        });
+
+        // Google Analytics (replace with your tracking ID)
+        // gtag('config', 'GA_TRACKING_ID');
+
+        // Schema.org structured data for better SEO
+        const organizationSchema = {
+            "@context": "https://schema.org",
+            "@type": "MedicalOrganization",
+            "name": "Madhurama Netralaye & Dental Clinic",
+            "url": "https://www.madhuramanetralaye.com",
+            "logo": "https://www.madhuramanetralaye.com/images/mnoficiallogo.png",
+            "description": "Best Eye Doctor and Dental Care in Bhandara, Maharashtra. Expert ophthalmologist and dental surgeon providing advanced treatments.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Rajiv Gandhi Chowk, Kham Talav Road",
+                "addressLocality": "Bhandara",
+                "addressRegion": "Maharashtra",
+                "postalCode": "441904",
+                "addressCountry": "IN"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "21.16837318627516",
+                "longitude": "79.65041157932943"
+            },
+            "telephone": "+919028107222",
+            "openingHours": ["Mo-Su 09:00-20:00"],
+            "priceRange": "₹₹",
+            "areaServed": ["Bhandara", "Nagpur", "Gondia", "Chandrapur", "Wardha", "Maharashtra"]
+        };
+
+        // Add breadcrumb schema
+        const breadcrumbSchema = {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://www.madhuramanetralaye.in"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Eye Doctor Bhandara",
+                    "item": "https://www.madhuramanetralaye.in/eye-doctor"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Dental Doctor Bhandara",
+                    "item": "https://www.madhuramanetralaye.in/dental-doctor"
+                }
+            ]
+        };
+
+        // Inject schemas into page
+        const schemaScript1 = document.createElement('script');
+        schemaScript1.type = 'application/ld+json';
+        schemaScript1.textContent = JSON.stringify(organizationSchema);
+        document.head.appendChild(schemaScript1);
+
+        const schemaScript2 = document.createElement('script');
+        schemaScript2.type = 'application/ld+json';
+        schemaScript2.textContent = JSON.stringify(breadcrumbSchema);
+        document.head.appendChild(schemaScript2);
+
+        // Performance optimization
+        function optimizePerformance() {
+            // Preload critical images
+            const criticalImages = [
+                '/images/mnoficiallogo.png',
+                '/images/mnbuilding.png',
+                '/images/durgeshpashine.png',
+                '/images/poonampashine.png'
+            ];
+
+            criticalImages.forEach(src => {
+                const link = document.createElement('link');
+                link.rel = 'preload';
+                link.as = 'image';
+                link.href = src;
+                document.head.appendChild(link);
+            });
+
+            // Optimize iframe loading
+            const iframe = document.querySelector('.cataract-video');
+            if (iframe) {
+                iframe.loading = 'lazy';
+            }
+        }
+
+        // Initialize performance optimizations
+        window.addEventListener('load', optimizePerformance);
+
+        // Add click tracking for analytics
+        function trackUserInteractions() {
+            // Track button clicks
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const btnText = this.textContent.trim();
+                    console.log('Button clicked:', btnText);
+                    // Add your analytics tracking code here
+                    // gtag('event', 'click', { 'event_category': 'Button', 'event_label': btnText });
+                });
+            });
+
+            // Track service card clicks
+            document.querySelectorAll('.service-card').forEach(card => {
+                card.addEventListener('click', function () {
+                    const serviceName = this.querySelector('h3').textContent;
+                    console.log('Service viewed:', serviceName);
+                    // Add your analytics tracking code here
+                    // gtag('event', 'view', { 'event_category': 'Service', 'event_label': serviceName });
+                });
+            });
+
+            // Track phone number clicks
+            document.querySelectorAll('a[href^="tel:"]').forEach(tel => {
+                tel.addEventListener('click', function () {
+                    console.log('Phone number clicked:', this.href);
+                    // Add your analytics tracking code here
+                    // gtag('event', 'click', { 'event_category': 'Contact', 'event_label': 'Phone Call' });
+                });
+            });
+        }
+
+        // Initialize user interaction tracking
+        document.addEventListener('DOMContentLoaded', trackUserInteractions);
+
+        // SEO enhancements
+        function enhanceSEO() {
+            // Add alt text to images that don't have it
+            document.querySelectorAll('img:not([alt])').forEach(img => {
+                img.alt = 'Madhurama Netralaye & Dental Clinic - Best Eye and Dental Care in Bhandara';
+            });
+
+            // Add title attributes to links
+            document.querySelectorAll('a:not([title])').forEach(link => {
+                if (link.textContent.trim()) {
+                    link.title = link.textContent.trim();
+                }
+            });
+
+            // Ensure proper heading hierarchy
+            const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+            headings.forEach((heading, index) => {
+                if (!heading.id && heading.textContent) {
+                    heading.id = heading.textContent.toLowerCase()
+                        .replace(/[^a-z0-9]+/g, '-')
+                        .replace(/-+/g, '-')
+                        .replace(/^-|-$/g, '');
+                }
+            });
+        }
+
+        // Initialize SEO enhancements
+        document.addEventListener('DOMContentLoaded', enhanceSEO);
+
+        // Local Storage for user preferences
+        function handleUserPreferences() {
+            // Save user's preferred contact method
+            document.querySelectorAll('.appointment-btn, a[href^="tel:"]').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    localStorage.setItem('preferredContact', 'phone');
+                    localStorage.setItem('lastContactTime', Date.now());
+                });
+            });
+
+            document.querySelectorAll('a[href*="indiaopd"]').forEach(btn => {
+                btn.addEventListener('click', function () {
+                    localStorage.setItem('preferredContact', 'online');
+                    localStorage.setItem('lastContactTime', Date.now());
+                });
+            });
+
+            // Show return visitor message
+            const lastVisit = localStorage.getItem('lastVisit');
+            if (lastVisit) {
+                const daysSinceLastVisit = Math.floor((Date.now() - parseInt(lastVisit)) / (1000 * 60 * 60 * 24));
+                if (daysSinceLastVisit > 7) {
+                    console.log('Welcome back! It\'s been', daysSinceLastVisit, 'days since your last visit.');
+                }
+            }
+            localStorage.setItem('lastVisit', Date.now());
+        }
+
+        // Initialize user preferences
+        document.addEventListener('DOMContentLoaded', handleUserPreferences);
+
+        // Error handling
+        window.addEventListener('error', function (e) {
+            console.error('JavaScript error:', e.error);
+            // You can send error reports to your analytics here
+        });
+
+        // Add loading states for better UX
+        function addLoadingStates() {
+            document.querySelectorAll('.btn').forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    if (this.href && this.href.includes('indiaopd')) {
+                        this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+                        setTimeout(() => {
+                            this.innerHTML = '<i class="fas fa-calendar-check"></i> Book Appointment';
+                        }, 3000);
+                    }
+                });
+            });
+        }
+
+        // Initialize loading states
+        document.addEventListener('DOMContentLoaded', addLoadingStates);
+
+        // Accessibility improvements
+        function improveAccessibility() {
+            // Add keyboard navigation for service cards
+            document.querySelectorAll('.service-card').forEach(card => {
+                card.setAttribute('tabindex', '0');
+                card.setAttribute('role', 'button');
+
+                card.addEventListener('keydown', function (e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+            });
+
+            // Add aria-labels to social links
+            document.querySelectorAll('.social-links a').forEach(link => {
+                const icon = link.querySelector('i');
+                if (icon) {
+                    const platform = icon.className.includes('facebook') ? 'Facebook' :
+                        icon.className.includes('instagram') ? 'Instagram' :
+                            icon.className.includes('whatsapp') ? 'WhatsApp' :
+                                icon.className.includes('youtube') ? 'YouTube' : 'Social Media';
+                    link.setAttribute('aria-label', `Visit our ${platform} page`);
+                }
+            });
+
+            // Add skip link for keyboard users
+            const skipLink = document.createElement('a');
+            skipLink.href = '#main-content';
+            skipLink.textContent = 'Skip to main content';
+            skipLink.className = 'skip-link';
+            skipLink.style.cssText = `
+                position: absolute;
+                left: -9999px;
+                top: 0;
+                z-index: 9999;
+                padding: 8px 16px;
+                background: var(--primary);
+                color: white;
+                text-decoration: none;
+            `;
+
+            skipLink.addEventListener('focus', function () {
+                this.style.left = '10px';
+            });
+
+            skipLink.addEventListener('blur', function () {
+                this.style.left = '-9999px';
+            });
+
+            document.body.insertBefore(skipLink, document.body.firstChild);
+
+            // Add main content identifier
+            const heroSection = document.querySelector('.hero');
+            if (heroSection) {
+                heroSection.id = 'main-content';
+            }
+        }
+
+        // Initialize accessibility improvements
+        document.addEventListener('DOMContentLoaded', improveAccessibility);
+
     </script>
+
+    <!-- Google Analytics (replace GA_TRACKING_ID with your actual tracking ID) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'GA_TRACKING_ID', {
+            page_title: 'Best Eye Doctor & Dental Care in Bhandara | Madhurama Netralaye',
+            page_location: window.location.href,
+            custom_map: {
+                'custom_parameter_1': 'clinic_location',
+                'custom_parameter_2': 'service_type'
+            }
+        });
+
+        // Track specific events
+        gtag('event', 'page_view', {
+            'clinic_location': 'Bhandara',
+            'service_type': 'Eye Care and Dental',
+            'doctor_name': 'Dr. Durgesh Pashine & Dr. Poonam Pashine'
+        });
+    </script>
+
+    <!-- Additional meta tags for enhanced local SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Madhurama Netralaye & Dental Clinic",
+        "image": [
+            "https://www.madhuramanetralaye.in/images/madhuramaeyehospital.png",
+            "https://www.madhuramanetralaye.in/images/durgeshpashine.png",
+            "https://www.madhuramanetralaye.in/images/poonampashine.png"
+        ],
+        "@id": "https://www.madhuramanetralaye.in",
+        "url": "https://www.madhuramanetralaye.in",
+        "telephone": "+919028107222",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Rajiv Gandhi Chowk, Kham Talav Road",
+            "addressLocality": "Bhandara",
+            "addressRegion": "MH",
+            "postalCode": "441904",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "21.16837318627516",
+            "longitude": "79.65041157932943"
+        },
+        "openingHoursSpecification": [{
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Wednesday", 
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+            ],
+            "opens": "09:00",
+            "closes": "20:00"
+        }],
+        "priceRange": "₹₹",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "150"
+        },
+        "review": [{
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Rajesh Kumar"
+            },
+            "reviewBody": "Best eye doctor in Bhandara! Dr. Durgesh performed my cataract surgery with such precision. Painless and affordable!"
+        }]
+    }
+    </script>
+
 </body>
 
 </html>
